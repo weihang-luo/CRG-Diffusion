@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Checkpoints and Models (stored on Google Drive)
+checkpoint/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Generated Images
+images/
+outputs/
+results/
+samples/
+
+# Logs
+logs/
+*.log
+log/
+runs/
+wandb/
+
+# Data (too large for git)
+data/*.png
+data/*.jpg
+data/*.jpeg
+data/sample/*.png
+data/sample/*.jpg
+data/sample/*.txt
+
+# Exceptions - keep sample data structure and configs
+!data/pcb.json
+!data/sample/.gitkeep
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PyTorch
+*.pth.tar
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation build
+docs/_build/

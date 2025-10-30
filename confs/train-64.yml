@@ -1,0 +1,44 @@
+shuffle: True
+lr: 1e-4  # 1e-4
+weight_decay: 0.0
+lr_anneal_steps: 0
+batch_size: 64
+microbatch: -1  # -1 disables microbatches
+ema_rate: 0.9999  # comma-separated list of EMA values
+log_interval: 100
+save_interval: 10000
+checkpoint_dir: checkpoint/laether_64_cond/
+resume_checkpoint: checkpoint/laether_64_cond/ # checkpoint 
+class_json_path: 'data/lsd.json'
+use_fp16: true
+fp16_scale_growth: 1e-3
+sample_num: 4  
+
+# diffussion
+learn_sigma: true
+diffusion_steps: 1000
+noise_schedule: linear    ################ 
+schedule_sampler: uniform
+timestep_respacing: ""  # dont set when training
+use_kl: False
+predict_xstart: False
+rescale_timesteps: False
+rescale_learned_sigmas: False
+clip_denoised: true
+respace_interpolate: false # Not Implemented
+
+image_size: 64
+num_channels: 64  # 256 in diffusion model 
+class_cond: True   # class generation
+num_res_blocks: 2
+num_heads: 4
+num_heads_upsample: -1
+num_head_channels: 16
+attention_resolutions: 16,8
+channel_mult: "1, 2, 3, 4"
+dropout: 0.0
+use_checkpoint: False
+use_scale_shift_norm: True
+resblock_updown: true
+use_new_attention_order: False
+
