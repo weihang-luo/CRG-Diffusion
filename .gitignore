@@ -72,6 +72,8 @@ data/sample/*.txt
 # Exceptions - keep sample data structure and configs
 !data/pcb.json
 !data/sample/.gitkeep
+!data/sample/sample.jpg
+!data/sample/sample.txt
 
 # Temporary files
 tmp/
