@@ -59,15 +59,6 @@ Place the downloaded files with the following names:
    └── checkpoint-256-defect-free.pt # Main model (256×256)
    ```
 
-You can download it directly using the command line:
-
-```bash
-wget -O checkpoint/checkpoint-256-defect-free.pt "https://drive.google.com/uc?export=download&id=1axJMm0fpg0v2HIApxz0IIaY0WTDKalCH"
-```
-
-```bash
-wget -O checkpoint/checkpoint-64-defect.pt "https://drive.google.com/uc?export=download&id=1GHT-q1XjF_aCmInp_g5gMruX3yih-iyM"
-```
 
 **Note**: If you want to use your own dataset, you can train custom models based on the [OpenAI guided-diffusion](https://github.com/openai/guided-diffusion) library and adjust the corresponding configuration parameters accordingly. See `confs/train-XX.yml` for detailed configuration.
 
